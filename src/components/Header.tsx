@@ -20,17 +20,17 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!event.target.closest('.funding-dropdown')) {
+      if (!event.target.closest(".funding-dropdown")) {
         setIsFundingDropdownOpen(false);
       }
     };
 
     if (isFundingDropdownOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isFundingDropdownOpen]);
 
@@ -51,14 +51,14 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
           <img
             src="logo.png"
             alt="Company Logo"
-            className="h-[50px] w-auto object-contain" 
+            className="h-[70px] w-auto object-contain"
           />
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           {/* Funding Solutions Dropdown */}
-          <div 
+          <div
             className="relative group funding-dropdown"
             onMouseEnter={() => {
               setIsFundingHovered(true);
@@ -72,20 +72,24 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
               }
             }}
           >
-            <button 
+            <button
               className={`flex items-center font-medium transition-colors ${
-                isScrolled ? "text-foreground hover:text-primary" : "text-white hover:text-sky-400"
+                isScrolled
+                  ? "text-foreground hover:text-primary"
+                  : "text-white hover:text-sky-400"
               }`}
               onClick={() => setIsFundingDropdownOpen(!isFundingDropdownOpen)}
             >
               Funding Solutions
-              <ChevronDown className={`w-4 h-4 ml-1 transition-transform ${
-                isFundingDropdownOpen ? "rotate-180" : ""
-              }`} />
+              <ChevronDown
+                className={`w-4 h-4 ml-1 transition-transform ${
+                  isFundingDropdownOpen ? "rotate-180" : ""
+                }`}
+              />
             </button>
-            
+
             {isFundingDropdownOpen && (
-              <div 
+              <div
                 className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-50"
                 onMouseEnter={() => setIsFundingHovered(true)}
                 onMouseLeave={() => {
@@ -121,7 +125,9 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
           <Link
             to="/about"
             className={`font-medium transition-colors ${
-              isScrolled ? "text-foreground hover:text-primary" : "text-white hover:text-sky-400"
+              isScrolled
+                ? "text-foreground hover:text-primary"
+                : "text-white hover:text-sky-400"
             }`}
           >
             About Us
@@ -129,7 +135,9 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
           <a
             href="tel:+1(347) 510-9989"
             className={`font-medium transition-colors ${
-              isScrolled ? "text-foreground hover:text-primary" : "text-white hover:text-sky-400"
+              isScrolled
+                ? "text-foreground hover:text-primary"
+                : "text-white hover:text-sky-400"
             }`}
           >
             +1(347) 510-9989
@@ -143,7 +151,7 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
             size="lg"
             className="bg-black text-white hover:bg-gray-900"
             asChild
-            style={{backgroundColor:"#5CA7F9"}}
+            style={{ backgroundColor: "#5CA7F9" }}
           >
             <Link to="/get-started">Get Started</Link>
           </Button>
@@ -168,16 +176,18 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
           <div className="flex flex-col space-y-4">
             {/* Mobile Funding Solutions Dropdown */}
             <div className="flex flex-col">
-              <button 
+              <button
                 className="flex items-center justify-between text-white hover:text-sky-400 font-medium py-2 px-3 rounded hover:bg-gray-800/50 transition-colors"
                 onClick={() => setIsFundingDropdownOpen(!isFundingDropdownOpen)}
               >
                 <span>Funding Solutions</span>
-                <ChevronDown className={`w-5 h-5 transition-transform ${
-                  isFundingDropdownOpen ? "rotate-180" : ""
-                }`} />
+                <ChevronDown
+                  className={`w-5 h-5 transition-transform ${
+                    isFundingDropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
-              
+
               {isFundingDropdownOpen && (
                 <div className="pl-4 mt-2 space-y-3">
                   <Link
@@ -231,7 +241,10 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
               className="mt-4 bg-sky-500 hover:bg-sky-600 text-white"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link to="/get-started" className="flex items-center justify-center">
+              <Link
+                to="/get-started"
+                className="flex items-center justify-center"
+              >
                 Get Started
                 <ChevronRight className="w-5 h-5 ml-2" />
               </Link>

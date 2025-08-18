@@ -18,7 +18,7 @@ const TabSection = () => {
             Simplify accounting and worry less with <span className="text-blue-600 font-medium">automated daily, weekly or monthly payments</span>. Most of our lending options include an amortized schedule that's easy to follow.
           </p>
           <p className="text-gray-700">
-            At <span className="text-blue-600 font-medium">Zenix Funding</span>, we understand that time is money. That's why we've implemented <span className="text-blue-600 font-medium">Easy Automated Payments</span> — a seamless solution designed to simplify your financial transactions.
+            At <span className="text-blue-600 font-medium">Zenix Capital</span>, we understand that time is money. That's why we've implemented <span className="text-blue-600 font-medium">Easy Automated Payments</span> — a seamless solution designed to simplify your financial transactions.
           </p>
         </>
       ),
