@@ -134,14 +134,14 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
             About Us
           </Link>
           <a
-            href="tel:+1(347) 510-9989"
+            href="tel:+1(212) 470-2153"
             className={`font-medium transition-colors ${
               isScrolled
                 ? "text-foreground hover:text-primary"
                 : "text-white hover:text-sky-400"
             }`}
           >
-            +1(347) 510-9989
+            +1(212) 470-2153
           </a>
         </div>
 
@@ -228,7 +228,7 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
               <ChevronRight className="w-5 h-5" />
             </Link>
             <a
-              href="tel:+1(347) 510-9989"
+              href="tel:+1(212) 470-2153"
               className="flex items-center justify-between text-white hover:text-sky-400 font-medium py-2 px-3 rounded hover:bg-gray-800/50 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

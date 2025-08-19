@@ -37,7 +37,7 @@ const Footer = () => {
                   <div>
                     <p className="font-medium text-white/80">Call us at</p>
                     <p className="text-xl font-semibold text-[#5BA7F9]">
-                      +1(347) 510-9989
+                      +1(212) 470-2153
                     </p>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ const Footer = () => {
                   <div>
                     <p className="font-medium text-white/80">Email us at</p>
                     <p className="text-lg font-semibold text-[#5BA7F9]">
-                      admin@zenixcapital.com
+                      admin@zenixcapitalllc.com
                     </p>
                   </div>
                 </div>
