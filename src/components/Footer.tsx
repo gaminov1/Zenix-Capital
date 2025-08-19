@@ -57,9 +57,8 @@ const Footer = () => {
 
               <p className="text-sm text-white/60 leading-relaxed pt-4">
                 *Zenix Capital Source LLC offers term loans, lines of credit,
-                business advances, and factoring in California through its
-                California-lending licensed partners... Zenix Capital Source
-                LLC., 447 Broadway, 2nd Floor, New York, NY 10013
+                business advances
+                ... Zenix Funding New York, NY
               </p>
             </div>
 

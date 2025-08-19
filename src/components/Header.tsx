@@ -44,14 +44,15 @@ const Header = ({ headerTextColor }: { headerTextColor?: string }) => {
     >
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo with background */}
-        <Link
+         <Link
           to="/"
-          className="flex items-center p-2 rounded-md bg-white/50 backdrop-blur-sm"
+          className="flex items-center p-2 rounded-md bg-white/70 backdrop-blur-sm h-[70px] w-auto"
         >
           <img
             src="logo.png"
             alt="Company Logo"
-            className="h-[70px] w-auto object-contain"
+            className="h-[60px] w-auto object-contain" // Increased height for better readability
+            style={{ maxWidth: "220px" }} // Optional: set a max width for larger logos
           />
         </Link>
 
